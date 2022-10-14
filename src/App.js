@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import StyledButton ,{FancyButton,SubmitButton} from "./Components/Button/Button"
+import { AnimatedLogo } from "./Components/Button/Button.styles";
+import {logo} from "./images/logo.svg "
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <button>Button</button> */}
+        <AnimatedLogo src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"/>
+    
+      <StyledButton>Styled Button</StyledButton>
+      <div>
+        <br/>
+      </div>
+      <StyledButton variant="outline">Styled Button</StyledButton>
+      <div>
+        <br/>
+      </div>
+      <FancyButton>Fancy Button</FancyButton>
+      <div>
+        <br/>
+      </div>
+      <SubmitButton>Submit Button</SubmitButton>
     </div>
   );
 }
